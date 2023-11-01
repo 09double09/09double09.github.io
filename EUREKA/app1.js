@@ -1,7 +1,10 @@
 /** @format */
 //運算設定
-let body = document.querySelector("body");
+
 window.onload = function () {
+  let body = document.querySelector("body");
+  let startBtn = document.querySelector(".startBtn");
+
   startBtn.addEventListener(
     "click",
     () => {
