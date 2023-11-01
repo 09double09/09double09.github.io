@@ -178,19 +178,6 @@
   animation: fadeIn 0.5s ease-in-out;
 }
 
-@font-face {
-  font-family: "GlowSansTC-wide-bold";
-  src: url("../fonts/GlowSensTC/GlowSansTC-Wide-Bold.woff") format("woff");
-  font-weight: lighter;
-}
-@font-face {
-  font-family: "GlowSansTC-extended-extraBold";
-  src: url("../fonts/GlowSensTC/GlowSansTC-Extended-ExtraBold.woff") format("woff");
-}
-@font-face {
-  font-family: "GlowSansTC-normal-bold";
-  src: url("../fonts/GlowSensTC/GlowSansTC-Normal-Bold.woff") format("woff");
-}
 * {
   margin: 0;
   padding: 0;
@@ -261,7 +248,7 @@ body main div.eureka div.title div.bottom div.titleText {
   margin-bottom: 1rem;
 }
 body main div.eureka div.title div.bottom div.titleText div {
-  font-family: "GlowSansTC-wide-bold", arial;
+  font-family: "Noto Sans TC", arial;
   font-size: 25px;
   color: rgb(242, 237, 226);
 }
@@ -281,7 +268,7 @@ body main div.eureka div.title div.bottom div.startBtn div.startTitle {
 body main div.eureka div.title div.bottom div.startBtn div.startTitle div.gameStart {
   position: absolute;
   transition: all 1s ease-in-out;
-  font-family: "GlowSansTC-wide-bold", arial;
+  font-family: "Noto Sans TC", arial;
   font-size: 15px;
   color: rgb(19, 19, 0);
 }
@@ -395,7 +382,7 @@ body section.test div.containerBottom div.mainPart div.mainTop div.queNum {
   display: flex;
 }
 body section.test div.containerBottom div.mainPart div.mainTop div.queNum h1 {
-  font-family: "GlowSansTC-Extended-Extrabold", arial;
+  font-family: "Noto Sans TC", arial;
   font-size: 1.5rem;
   color: rgb(255, 171, 6);
 }
@@ -419,7 +406,7 @@ body section.test div.containerBottom div.mainPart div.queText h1 {
   line-height: 27px;
   font-size: 1rem;
   overflow: hidden;
-  font-family: "GlowSansTC-Normal-Bold", arial;
+  font-family: "Noto Sans TC", arial;
   color: rgb(241, 236, 225);
 }
 body section.test div.containerBottom div.mainPart .choose {
@@ -451,7 +438,7 @@ body section.test div.containerBottom div.mainPart .choose .cho .eng div {
   position: absolute;
   font-weight: lighter;
   color: rgb(241, 236, 225);
-  font-family: "GlowSansTC-normal-bold";
+  font-family: "Noto Sans TC";
   font-size: 12px;
 }
 body section.test div.containerBottom div.mainPart .choose .cho .eng div.border {
@@ -470,6 +457,6 @@ body section.test div.containerBottom div.mainPart .choose .cho .choText div {
   line-height: 16px;
   font-weight: lighter;
   color: rgb(241, 236, 225);
-  font-family: "GlowSansTC-normal-bold";
+  font-family: "Noto Sans TC";
   font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
