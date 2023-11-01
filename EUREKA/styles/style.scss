@@ -170,20 +170,6 @@
 
 // 第一次進入遊戲
 // END: fade-in-animation
-@font-face {
-  font-family: "GlowSansTC-wide-bold";
-  src: url("../fonts/GlowSensTC/GlowSansTC-Wide-Bold.woff") format("woff");
-  font-weight: lighter;
-}
-@font-face {
-  font-family: "GlowSansTC-extended-extraBold";
-  src: url("../fonts/GlowSensTC/GlowSansTC-Extended-ExtraBold.woff")
-    format("woff");
-}
-@font-face {
-  font-family: "GlowSansTC-normal-bold";
-  src: url("../fonts/GlowSensTC/GlowSansTC-Normal-Bold.woff") format("woff");
-}
 
 * {
   margin: 0;
@@ -253,7 +239,7 @@ body {
             align-items: center;
             margin-bottom: 1rem;
             div {
-              font-family: "GlowSansTC-wide-bold", arial;
+              font-family: 'Noto Sans TC', arial;
               font-size: 25px;
               color: rgba(242, 237, 226, 1);
             }
@@ -274,11 +260,9 @@ body {
               div.gameStart {
                 position: absolute;
                 transition: all 1s ease-in-out;
-                font-family: "GlowSansTC-wide-bold", arial;
+                font-family: "Noto Sans TC", arial;
                 font-size: 15px;
                 color: rgba(19, 19, 0, 1);
-                &:hover {
-                }
               }
             }
           }
@@ -396,7 +380,7 @@ body {
           div.queNum {
             display: flex;
             h1 {
-              font-family: "GlowSansTC-Extended-Extrabold", arial;
+              font-family: "Noto Sans TC", arial;
               font-size: 1.5rem;
               color: rgba(255, 171, 6, 1);
             }
@@ -421,7 +405,7 @@ body {
             line-height: 27px;
             font-size: 1rem;
             overflow: hidden;
-            font-family: "GlowSansTC-Normal-Bold", arial;
+            font-family: "Noto Sans TC", arial;
             color: rgba(241, 236, 225, 1);
           }
         }
@@ -452,7 +436,7 @@ body {
                 position: absolute;
                 font-weight: lighter;
                 color: rgba(241, 236, 225, 1);
-                font-family: "GlowSansTC-normal-bold";
+                font-family: "Noto Sans TC";
 
                 font-size: 12px;
               }
@@ -474,7 +458,7 @@ body {
                 line-height: 16px;
                 font-weight: lighter;
                 color: rgba(241, 236, 225, 1);
-                font-family: "GlowSansTC-normal-bold";
+                font-family: "Noto Sans TC";
                 font-size: 12px;
               }
             }
