@@ -10,6 +10,7 @@ window.onload = function () {
   startBtn.addEventListener(
     "click",
     () => {
+      body.style.overflowY = "scroll";
       let isProcessing = true;
       let delay = 2000;
       setInterval(() => {
