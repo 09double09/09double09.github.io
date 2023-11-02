@@ -246,7 +246,6 @@ body .result img {
   position: relative;
   bottom: 5%;
   transition: all 1s ease-in-out;
-  width: 20rem;
 }
 body main {
   margin-top: 6rem;
