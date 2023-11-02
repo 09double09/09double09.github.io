@@ -350,12 +350,9 @@ window.onload = function () {
                 <img src="${resultImg}" alt="">
               </div>;`;
                 let img = document.querySelector("img");
-                let download = document.querySelector(".download");
                 img.style.opacity = 0;
-                download.style.opacity = 0;
                 img.style.transition = "all 1s ease-in-out";
                 setTimeout(() => {
-                  download.style.opacity = 1;
                   img.style.opacity = 1;
                 }, 500);
               }, 200);
