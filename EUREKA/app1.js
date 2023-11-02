@@ -337,7 +337,7 @@ window.onload = function () {
                   `./imgs/result/柏拉圖.png`,
                   `./imgs/result/馬克思.png`,
                   `./imgs/result/康德.png`,
-                  `./imgs/result/休謨.png`,
+                  `./imgs/result/休謨png.png`,
                   `./imgs/result/維根斯坦.png`,
                 ];
                 for (item in scores) {
@@ -346,8 +346,7 @@ window.onload = function () {
                     break;
                   }
                 }
-                body.innerHTML = `    <div class="result">
-                <div class="download">按壓儲存圖片！</div>
+                body.innerHTML = `    <div class="result">        
                 <img src="${resultImg}" alt="">
               </div>;`;
                 let img = document.querySelector("img");
