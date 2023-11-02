@@ -12,7 +12,7 @@ window.onload = function () {
     () => {
       body.style.overflowY = "scroll";
       let isProcessing = true;
-      let delay = 2000;
+      let delay = 2500;
       setInterval(() => {
         if (isProcessing == false) {
           isProcessing = true;
