@@ -130,7 +130,7 @@ window.onload = function () {
           imageArray[preLoadIndex].onload = function () {
             console.log("loaded");
             preLoadIndex++;
-            setTimeout(() => {}, 5000);
+            setTimeout(() => {}, 15000);
             preloadImage();
           };
         }}
