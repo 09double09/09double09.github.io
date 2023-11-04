@@ -3,7 +3,7 @@
 // /** @format */
 
 //運算設定
-// window.onload = function () {
+window.onload = function () {
   let counter = 2;
   let body = document.querySelector("body");
   body.style.x;
@@ -653,5 +653,5 @@
     },
     { once: true }
   );
-// };
+};
 // 選項設定
