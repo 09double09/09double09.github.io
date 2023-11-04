@@ -111,59 +111,47 @@ window.onload = function () {
         return new Promise((resolve, reject) => {
           const image = new Image();
           image.src = src;
-
+      
           image.onload = () => {
-            resolve(image); // 图像加载成功，将 Promise 标记为已完成
+            resolve(image);
           };
-
+      
           image.onerror = () => {
-            reject(new Error("图像加载失败")); // 图像加载失败，将 Promise 标记为失败
+            reject(new Error('图像加载失败'));
           };
         });
       }
+      let imageArray = [image1, image2, image3, image4, image5, image6];
       image1.src = `./imgs/result/Nietzsche.svg`;
       image2.src = `./imgs/result/plato.svg`;
       image3.src = `./imgs/result/marx.svg`;
       image4.src = `./imgs/result/kant.svg`;
       image5.src = `./imgs/result/hume.svg`;
       image6.src = `./imgs/result/Wittgenstein.svg`;
-      const imageArray = [
-        "./imgs/result/Nietzsche.svg",
-        "./imgs/result/plato.svg",
-        "./imgs/result/marx.svg",
-        "./imgs/result/kant.svg",
-        "./imgs/result/hume.svg",
-        "./imgs/result/Wittgenstein.svg",
-      ];
-      const imagePromises = imageArray.map(loadImage);
-      function loadImagesSequentially() {
-        let currentIndex = 0;
-
-        function loadNextImage() {
-          if (currentIndex < imagePromises.length) {
-            const currentPromise = imagePromises[currentIndex];
-            currentIndex++;
-
-            currentPromise
-              .then((image) => {
-                console.log("图像加载完成");
-                // 在这里可以对已加载的图像进行操作，例如将其添加到页面中
-                // 继续加载下一个图像
-                loadNextImage();
-              })
-              .catch((error) => {
-                console.error(error);
-                // 加载失败时，你可以添加适当的错误处理逻辑
-                // 继续加载下一个图像
-                loadNextImage();
-              });
+      // const imageArray = [
+      //   "./imgs/result/Nietzsche.svg",
+      //   "./imgs/result/plato.svg",
+      //   "./imgs/result/marx.svg",
+      //   "./imgs/result/kant.svg",
+      //   "./imgs/result/hume.svg",
+      //   "./imgs/result/Wittgenstein.svg",
+      // ];
+      async function loadImagesSequentially() {
+        for (const image of imageArray) {
+          try {
+            const loadedImage = await loadImage(image.src);
+            console.log(`${loadedImage.src} 加载完成`);
+            // 在这里可以对已加载的图像进行操作，例如将其添加到页面中
+      
+            // 等待一段时间，模拟按顺序加载
+            await new Promise((resolve) => setTimeout(resolve, 4000)); // 等待1秒
+          } catch (error) {
+            console.error(error);
+            // 加载失败时，你可以添加适当的错误处理逻辑
           }
         }
-
-        // 开始加载第一个图像
-        loadNextImage();
       }
-
+      
       // 调用函数以开始加载图像
       loadImagesSequentially();
       console.log(image1);
