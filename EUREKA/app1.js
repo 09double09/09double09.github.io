@@ -152,7 +152,7 @@ window.onload = function () {
           }
         }
       }
-      loadImagesSequentially();
+      
       // 调用函数以开始加载图像
       
       let chos;
@@ -287,6 +287,7 @@ window.onload = function () {
                         
                         choise.forEach((cho) => {
                           cho.addEventListener("click", (e) => {
+                            loadImagesSequentially();
                             if (isProcessing == true) {
                               isProcessing = false;
                               if (cho.classList.contains("A")) {
