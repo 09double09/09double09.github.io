@@ -3,14 +3,15 @@
 // /** @format */
 
 //運算設定
-window.onload = function () {
+// window.onload = function () {
   let counter = 2;
   let body = document.querySelector("body");
   body.style.x;
-  let startBtn = document.querySelector(".startBtn");
+  // let startBtn = document.querySelector(".startBtn");
   startBtn.addEventListener(
     "click",
     () => {
+      
       body.style.overflowY = "scroll";
       let isProcessing = true;
       let delay = 2500;
@@ -151,10 +152,9 @@ window.onload = function () {
           }
         }
       }
-      
-      // 调用函数以开始加载图像
       loadImagesSequentially();
-      console.log(image1);
+      // 调用函数以开始加载图像
+      
       let chos;
       let chooseNum = ["A", "B", "C", "D", "E", "F"];
       let queNumHead = "0";
@@ -284,6 +284,7 @@ window.onload = function () {
                       setTimeout(() => {
                         list();
                         // 選擇題跳下一題
+                        
                         choise.forEach((cho) => {
                           cho.addEventListener("click", (e) => {
                             if (isProcessing == true) {
@@ -652,5 +653,5 @@ window.onload = function () {
     },
     { once: true }
   );
-};
+// };
 // 選項設定
