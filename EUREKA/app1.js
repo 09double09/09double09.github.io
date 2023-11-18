@@ -11,7 +11,6 @@ window.onload = function () {
   startBtn.addEventListener(
     "click",
     () => {
-      
       body.style.overflowY = "scroll";
       let isProcessing = true;
       let delay = 2500;
@@ -23,7 +22,7 @@ window.onload = function () {
       }, delay);
       // 設定布林直isProcessing、if isProcessing is false setinterval {isProcessing == true}
       let mainQue = [
-        "你回到了1500年時大城市「戈爾德」的美術館，看到了許多作品，這些作品中讓你印象最深刻的是？",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sit accusamus tempore officiis aspernatur esse alias possimus illo beatae, quae, architecto magni rem libero voluptate quia omnis. Explicabo, quaerat laboriosam!",
         "從美術館出來後，你走在石板街道，突然街角跑出了一隻貓貓，你的想法是？",
         "在你準備離開時，發現貓貓跟在了你腳邊，突然你們遇到了一位亞德大學的男孩在路燈下哭泣，一問之下發現他考差了，心情很糟。你決定這樣安慰他：",
         "你走過轉角的一家小商舖，發現四周的景物都變了，你看到你在家，聽見外面有人大喊、敲門的聲音，從窗戶看出去發現有一隻吉度憤怒的白色吉娃娃緊追著一名外星人，怕狗的你會有什麼反應？",
@@ -112,13 +111,13 @@ window.onload = function () {
         return new Promise((resolve, reject) => {
           const image = new Image();
           image.src = src;
-      
+
           image.onload = () => {
             resolve(image);
           };
-      
+
           image.onerror = () => {
-            reject(new Error('图像加载失败'));
+            reject(new Error("图像加载失败"));
           };
         });
       }
@@ -143,7 +142,7 @@ window.onload = function () {
             const loadedImage = await loadImage(image.src);
             console.log(`${loadedImage.src} 加载完成`);
             // 在这里可以对已加载的图像进行操作，例如将其添加到页面中
-      
+
             // 等待一段时间，模拟按顺序加载
             await new Promise((resolve) => setTimeout(resolve, 4000)); // 等待1秒
           } catch (error) {
@@ -152,9 +151,9 @@ window.onload = function () {
           }
         }
       }
-      
+
       // 调用函数以开始加载图像
-      
+
       let chos;
       let chooseNum = ["A", "B", "C", "D", "E", "F"];
       let queNumHead = "0";
@@ -284,7 +283,7 @@ window.onload = function () {
                       setTimeout(() => {
                         list();
                         // 選擇題跳下一題
-                        
+
                         choise.forEach((cho) => {
                           cho.addEventListener("click", (e) => {
                             loadImagesSequentially();
