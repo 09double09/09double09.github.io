@@ -1,6 +1,5 @@
 /** @format */
-// 在这里放置你的 JavaScript 代码
-// window.onload = function () {
+
   let rightLine = document.querySelector(".rightLine");
   let leftLine = document.querySelector(".leftLine");
   let longLine = document.querySelector(".longLine");
@@ -113,4 +112,3 @@
     boat.classList.add("boatGo");
     boat.style.left = "15vw";
   }, 1000);
-// };
