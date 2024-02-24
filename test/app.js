@@ -83,12 +83,3 @@ btn.forEach((e) => {
     }
   });
 });
-
-function answer(score) {
-  for (let i = 0; i < resultKey.length; i++) {
-    for(let j =0; i < resultValue[i] )
-    if (score === resultValue[i]) {
-      return resultKey;
-    }
-  }
-}
