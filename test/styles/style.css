@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+html body {
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(../imgs/start.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+html body div.btn {
+  position: relative;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #d54a3d, #dfd9ac);
+  box-shadow: 0 0.25rem 0.25rem rgba(213, 74, 61, 0.84);
+  width: 7.6rem;
+  height: 3rem;
+  border-radius: 2rem;
+}
+html body div.btn div {
+  pointer-events: none;
+  text-align: center;
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */
