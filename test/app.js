@@ -4,7 +4,7 @@ let result = {
   photographer: ["bbaaa", "bbaab", "bbaba", "bbabb"],
   producer: ["abaaa", "abaab", "babab", "ababb"],
   supervisor: ["bbbaa", "bbbab", "bbbba", "bbbbb"],
-  audio: ["bbbaa", "bbbab", "bbbba", "bbbbb"],
+  audio: ["abbaa", "abbab", "abbba", "abbbb"],
   art: ["aaaaa", "aaaab", "baabb", "baaab"],
   actor: ["aaaba", "aaabb", "aabbb", "babab"],
   light: ["aabaa", "aabba", "baaba", "aabab"],
@@ -34,7 +34,8 @@ let imgsCount = 0;
 let body = document.querySelector("body");
 let resultKey = Object.keys(result);
 let resultValue = Object.values(result);
-
+let resultImg = document.createElement("img");
+console.log(resultImg);
 btn.forEach((e) => {
   e.addEventListener("click", function gank(e) {
     if (imgsCount < 6) {
@@ -93,8 +94,11 @@ btn.forEach((e) => {
             console.log(answer(score));
             resultBtn.addEventListener("click", (e) => {
               resultBtn.remove();
-              body.style.backgroundImage =
-                "url(./imgs1x/" + answer(score) + ".png)";
+              body.style.backgroundImage = "none";
+              body.appendChild(resultImg);
+              resultImg.src = "./imgs1x/" + answer(score) + ".png";
+              // body.style.backgroundImage =
+              //   "url(./imgs1x/" + answer(score) + ".png)";
             });
           }
         });
