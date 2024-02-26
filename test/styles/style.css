@@ -17,7 +17,6 @@ html body {
   display: flex;
   justify-content: center;
   background-image: url(../imgs/start.svg);
-  background-size: auto 100%;
   background-repeat: no-repeat;
   align-items: center;
   flex-direction: column;
@@ -39,4 +38,15 @@ html body div.btn div {
   pointer-events: none;
   text-align: center;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-size: 100% auto;
+  }
+}
+@media screen and (min-width: 500px) {
+  body {
+    background-size: auto 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
