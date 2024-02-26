@@ -60,9 +60,21 @@ html body div.btn div {
   body {
     background-size: 100% auto;
   }
+  body img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media screen and (min-width: 500px) {
   body {
     background-size: auto 100%;
+  }
+  body img {
+    width: auto;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=style.css.map */
