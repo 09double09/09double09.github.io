@@ -36,10 +36,10 @@ let resultKey = Object.keys(result);
 let resultValue = Object.values(result);
 
 btn.forEach((e) => {
-  //   if (imgsCount == 4) return false;
-
   e.addEventListener("click", function gank(e) {
-    body.style.backgroundImage = "url(./imgs/" + imgs[imgsCount] + ".svg)";
+    if (imgsCount < 6) {
+      body.style.backgroundImage = "url(./imgs/" + imgs[imgsCount] + ".svg)";
+    }
     imgsCount += 1;
     if (imgsCount == 1) {
       btn.forEach((e) => {
@@ -72,14 +72,42 @@ btn.forEach((e) => {
           }
           let questionNum = 0;
           btns.forEach((e) => {
-            e.innerHTML = `<div>${question[imgsCount - 1][questionNum]}<div>`;
-            questionNum += 1;
+            if (imgsCount < 6) {
+              e.innerHTML = `<div>${question[imgsCount - 1][questionNum]}<div>`;
+              questionNum += 1;
+            }
           });
           body.style.backgroundImage =
             "url(./imgs/" + imgs[imgsCount] + ".svg)";
           imgsCount += 1;
+          if (imgsCount == 7) {
+            btns.forEach((e) => {
+              e.remove();
+            });
+            body.innerHTML = `   <div class='btn' data-value='a'>點擊展開<div></div></div> `;
+            let resultBtn = document.querySelector(".btn");
+            console.log(resultBtn);
+            resultBtn.style.top = "14.2rem";
+            resultBtn.style.left = "0.4rem";
+            resultBtn.style.width = "11.5rem";
+            console.log(answer(score));
+            resultBtn.addEventListener("click", (e) => {
+              resultBtn.remove();
+              body.style.backgroundImage =
+                "url(./imgs/" + answer(score) + ".svg)";
+            });
+          }
         });
       });
     }
   });
 });
+
+function answer(score) {
+  for (let i = 0; i < resultKey.length; i++) {
+    for (let j = 0; j < resultValue[i].length; j++)
+      if (score === resultValue[i][j]) {
+        return resultKey[i];
+      }
+  }
+}
