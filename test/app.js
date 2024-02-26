@@ -2,7 +2,7 @@ let score = "";
 let result = {
   director: ["babaa", "babba", "babbb", "baaaa"],
   photographer: ["bbaaa", "bbaab", "bbaba", "bbabb"],
-  producer: ["abaaa", "abaab", "ababab", "ababb"],
+  producer: ["abaaa", "abaab", "ababa", "ababb"],
   supervisor: ["bbbaa", "bbbab", "bbbba", "bbbbb"],
   audio: ["abbaa", "abbab", "abbba", "abbbb"],
   art: ["aaaaa", "aaaab", "baabb", "baaab"],
