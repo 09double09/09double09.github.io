@@ -38,6 +38,7 @@ html body {
   position: relative;
 }
 html body div.btn {
+  cursor: pointer;
   position: relative;
   top: 5rem;
   display: flex;
