@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "GenSenB";
+  src: url("../fonts/GenSenRounded-B.woff2");
+}
+@font-face {
+  font-family: "GenSenM";
+  src: url("../fonts/GenSenRounded-M.woff2");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,13 +13,20 @@
   text-decoration: none;
 }
 
+.first {
+  font-family: "GenSenB", sans-serif;
+}
+
 html {
+  overflow-y: hidden;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 html body {
+  font-family: "GenSenM", sans-serif;
   background-position: center;
   height: 100%;
   display: flex;
