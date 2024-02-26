@@ -2,7 +2,7 @@ let score = "";
 let result = {
   director: ["babaa", "babba", "babbb", "baaaa"],
   photographer: ["bbaaa", "bbaab", "bbaba", "bbabb"],
-  producer: ["abaaa", "abaab", "babab", "ababb"],
+  producer: ["abaaa", "abaab", "ababab", "ababb"],
   supervisor: ["bbbaa", "bbbab", "bbbba", "bbbbb"],
   audio: ["abbaa", "abbab", "abbba", "abbbb"],
   art: ["aaaaa", "aaaab", "baabb", "baaab"],
@@ -96,7 +96,7 @@ btn.forEach((e) => {
               resultBtn.remove();
               body.style.backgroundImage = "none";
               body.appendChild(resultImg);
-              resultImg.src = "./imgs1x/" + answer(score) + ".png";
+              resultImg.src = "./imgs1x/" + answer(score) + ".svg";
               // body.style.backgroundImage =
               //   "url(./imgs1x/" + answer(score) + ".png)";
             });
