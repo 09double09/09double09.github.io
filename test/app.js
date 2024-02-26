@@ -96,7 +96,7 @@ btn.forEach((e) => {
               resultBtn.remove();
               body.style.backgroundImage = "none";
               body.appendChild(resultImg);
-              resultImg.src = "./imgs1x/" + answer(score) + ".svg";
+              resultImg.src = "./imgs1x/" + answer(score) + ".png";
               // body.style.backgroundImage =
               //   "url(./imgs1x/" + answer(score) + ".png)";
             });
