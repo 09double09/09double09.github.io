@@ -2,7 +2,7 @@ let score = "";
 let result = {
   director: ["babaa", "babba", "babbb", "baaaa"],
   photographer: ["bbaaa", "bbaab", "bbaba", "bbabb"],
-  producer: ["abaaa", "abaab", "babab", "aababb"],
+  producer: ["abaaa", "abaab", "babab", "ababb"],
   supervisor: ["bbbaa", "bbbab", "bbbba", "bbbbb"],
   audio: ["bbbaa", "bbbab", "bbbba", "bbbbb"],
   art: ["aaaaa", "aaaab", "baabb", "baaab"],
@@ -38,7 +38,7 @@ let resultValue = Object.values(result);
 btn.forEach((e) => {
   e.addEventListener("click", function gank(e) {
     if (imgsCount < 6) {
-      body.style.backgroundImage = "url(./imgs/" + imgs[imgsCount] + ".svg)";
+      body.style.backgroundImage = "url(./imgs1x/" + imgs[imgsCount] + ".png)";
     }
     imgsCount += 1;
     if (imgsCount == 1) {
@@ -78,7 +78,7 @@ btn.forEach((e) => {
             }
           });
           body.style.backgroundImage =
-            "url(./imgs/" + imgs[imgsCount] + ".svg)";
+            "url(./imgs1x/" + imgs[imgsCount] + ".png)";
           imgsCount += 1;
           if (imgsCount == 7) {
             btns.forEach((e) => {
@@ -94,7 +94,7 @@ btn.forEach((e) => {
             resultBtn.addEventListener("click", (e) => {
               resultBtn.remove();
               body.style.backgroundImage =
-                "url(./imgs/" + answer(score) + ".svg)";
+                "url(./imgs1x/" + answer(score) + ".png)";
             });
           }
         });
