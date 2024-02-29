@@ -41,8 +41,7 @@ btn.forEach((e) => {
     if (imgsCount < 6) {
       if (imgsCount == 1 || imgsCount == 2 || imgsCount == 5) {
         body.style.backgroundImage = "url(./imgsJ/" + imgs[imgsCount] + ".jpg";
-      }
-      if (imgsCount != 1 || imgsCount != 2 || imgsCount != 5) {
+      } else {
         body.style.backgroundImage =
           "url(./imgs1x/" + imgs[imgsCount] + ".png)";
       }
