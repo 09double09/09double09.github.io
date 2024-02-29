@@ -31,7 +31,7 @@ html body {
   height: 100%;
   display: flex;
   justify-content: center;
-  background-image: url(../imgsJ/start.jpg);
+  background-image: url(../imgs1x/start.png);
   background-repeat: no-repeat;
   align-items: center;
   flex-direction: column;
