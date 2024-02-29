@@ -78,8 +78,19 @@ btn.forEach((e) => {
               questionNum += 1;
             }
           });
-          body.style.backgroundImage =
-            "url(./imgsJ/" + imgs[imgsCount] + ".jpg)";
+          if (
+            imgsCount == 0 ||
+            imgsCount == 3 ||
+            imgsCount == 4 ||
+            imgsCount == 0
+          ) {
+            body.style.backgroundImage =
+              "url(./imgs1x/" + imgs[imgsCount] + ".png)";
+          } else {
+            body.style.backgroundImage =
+              "url(./imgsJ/" + imgs[imgsCount] + ".jpg)";
+          }
+
           imgsCount += 1;
           if (imgsCount == 7) {
             btns.forEach((e) => {
