@@ -39,7 +39,13 @@ console.log(resultImg);
 btn.forEach((e) => {
   e.addEventListener("click", function gank(e) {
     if (imgsCount < 6) {
-      body.style.backgroundImage = "url(./imgs1x/" + imgs[imgsCount] + ".png)";
+      if (imgsCount == 1 || imgsCount == 2 || imgsCount == 5) {
+        body.style.backgroundImage = "url(./imgsJ/" + imgs[imgsCount] + ".jpg";
+      }
+      if (imgsCount != 1 || imgsCount != 2 || imgsCount != 5) {
+        body.style.backgroundImage =
+          "url(./imgs1x/" + imgs[imgsCount] + ".png)";
+      }
     }
     imgsCount += 1;
     if (imgsCount == 1) {
