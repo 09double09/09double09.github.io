@@ -17,6 +17,11 @@
   font-family: "GenSenB", sans-serif;
 }
 
+html body img {
+  position: relative;
+  bottom: 1rem;
+}
+
 html {
   overflow-y: hidden;
   overflow-x: hidden;
